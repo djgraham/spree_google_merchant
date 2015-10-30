@@ -36,7 +36,7 @@
     </thead>
     <tbody>
       <% @collection.each do |product_ad_channel| %>
-          <tr id="<%= spree_dom_id product %>" data-hook="admin_products_index_rows" class="<%= cycle('odd', 'even') %>">
+          <tr id="<%= spree_dom_id product_ad_channel %>" data-hook="admin_products_index_rows" class="<%= cycle('odd', 'even') %>">
             <td class="align-center"><%= product_ad_channel.name rescue '' %></td>
             <td class="align-center"><%= product_ad_channel.presentation rescue '' %></td>
             <td class="align-center"><%= product_ad_channel.min_cpc rescue '' %></td>
